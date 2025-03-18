@@ -73,6 +73,7 @@ header {
 .principal {
     display: flex;
     gap: 30px;
+    padding: 10px;
 }
 
 /* ======= Columna Izquierda (Categorías) ======= */
@@ -83,13 +84,13 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 10px;
 }
 
 .categoria {
     background-color: #0057B7; /* Azul institucional */
-    padding: 15px;
+    padding: 30px 10px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -109,24 +110,27 @@ header {
 .derecha {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     width: 70%; /* Ocupa el 75% del espacio */
     align-items: center;
+    justify-content: center;
+    
 }
 
 /* ======= Tarjetas de Curso ======= */
 .curso {
     background-color: #EAEAEA;
-    padding: 20px;
-    width: 250px;
-    height: 40%;
+    padding: 10px;
+    width: 280px;
+    height: 42%;
     border-radius: 10px;
+    border: 1px solid black;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .curso img {
-    width: 100%;
+    width: 95%;
     height: 50%;
     border-radius: 5px;
 }
