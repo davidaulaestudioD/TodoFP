@@ -1,0 +1,173 @@
+
+/* ======= Estilos generales ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======= Header ======= */
+header {
+    background-color: #002F6C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.header-left img,
+.header-right img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav ul li {
+    display: inline;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: #0057B7;
+}
+
+/* ======= Hero Section ======= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+}
+
+.hero div:first-child {
+    flex: 1;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+    padding-left: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #002F6C;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0057B7;
+}
+
+.imagenHero {
+    flex: 1;
+    height: 100%;
+    background: url('img/hero.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.secundario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3%;
+    height: 60vh;
+    background-color: #EAEAEA;
+}
+
+.secundario h1 {
+    font-size: 32px;
+    color: #002F6C;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.fp {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    height: 100%;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: rgba(255, 255, 255, 0.705); /* Azul claro recomendado */
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; /* No más ancho de 400px */
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tarjeta h2 {
+    color: #002F6C;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tarjeta img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 16px;
+    color: #0057B7;
+}
+.tarjeta button {
+    background-color: #0057B7; /* Azul institucional */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta button:hover {
+    background-color: #003F8C; /* Azul más oscuro al pasar el mouse */
+}
+
+
+/* ======= Footer ======= */
+footer {
+    background-color: #002F6C;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+
