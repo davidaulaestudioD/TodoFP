@@ -1,0 +1,168 @@
+/* ======= Estilos generales ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======= Header ======= */
+header {
+    background-color: #002F6C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.header-left img,
+.header-right img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav ul li {
+    display: inline;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: #79b8fc;
+}
+
+
+
+/* .principal {
+    display: flex;
+    width: 100%;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.derecha {
+    display: flex;
+    width: 70%;
+
+} */
+ /* ======= Sección Principal ======= */
+.principal {
+    display: flex;
+    gap: 30px;
+}
+
+/* ======= Columna Izquierda (Categorías) ======= */
+.izquierda {
+    background-color: #EAEAEA; /* Fondo claro */
+    padding: 20px;
+    width: 30%; /* Ocupa el 25% del espacio */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categoria {
+    background-color: #0057B7; /* Azul institucional */
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.categoria h1 {
+    font-size: 18px;
+    color: white;
+}
+
+.categoria:hover {
+    background-color: #003F8C; /* Azul más oscuro al pasar el mouse */
+}
+
+/* ======= Columna Derecha (Cursos) ======= */
+.derecha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%; /* Ocupa el 75% del espacio */
+    align-items: center;
+}
+
+/* ======= Tarjetas de Curso ======= */
+.curso {
+    background-color: #EAEAEA;
+    padding: 20px;
+    width: 250px;
+    height: 40%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curso img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.curso h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.curso p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.curso button {
+    background-color: #0057B7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.curso button:hover {
+    background-color: #003F8C;
+}
+
+
+
+
+/* ======= Footer ======= */
+footer {
+    background-color: #002F6C;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
