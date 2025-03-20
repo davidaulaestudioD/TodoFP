@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #002F6C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.header-left img,
+.header-right img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav ul li {
+    display: inline;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: #79b8fc;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+
+.intro {
+    background-color: #FFFFFF;
+    padding: 50px 5%;
+    display: flex;
+    gap: 10%;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #002F6C;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #0057B7;
+    margin-top: 15px;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.beneficios {
+    background-color: #EAF3FF;
+    padding: 50px 10%;
+}
+
+.beneficios h2 {
+    font-size: 28px;
+    color: #002F6C;
+    margin-bottom: 20px;
+}
+
+.contenedores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 210px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+.niveles {
+    background-color: #FFFFFF;
+    padding: 50px 10%;
+}
+
+.niveles h2 {
+    font-size: 28px;
+    color: #002F6C;
+    margin-bottom: 20px;
+}
+
+.nivel {
+    background-color: #EAEAEA;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+.nivel h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.salidas {
+    background-color: #EAEAEA;
+    padding: 50px 10%;
+}
+
+.salidas h2 {
+    font-size: 28px;
+    color: #002F6C;
+    margin-bottom: 15px;
+}
+
+.salidas p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sectores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sectores span {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+
+
+
+.faq {
+    background-color: #FFFFFF;
+    padding: 50px 10%;
+}
+.faq h2 {
+    margin-bottom: 15px;
+}
+
+details {
+    background-color: #EAEAEA;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+details p {
+    margin-top: 10px;
+}
+
+summary {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #002F6C;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #002F6C;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header-nav ul::after {
+        content: "";
+        display: block;
+        margin: 10px auto;
+        width: 50px;
+        height: 50px;
+        background: url('img/user.png') no-repeat center center;
+        background-size: contain;
+        filter: brightness(0) invert(1);
+    }
+    .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .header-right {
+        display: none;
+    }
+    #menu-toggle:checked ~ .header-nav {
+        display: block;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 5%;
+        gap: 20px;
+    }
+    .intro img {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .contenedores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .beneficio {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .contenedores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nivel {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .sectores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq {
+        padding: 30px 5%;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: auto;
+    }
+}
